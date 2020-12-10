@@ -16,17 +16,23 @@ h3 {
     padding-top: 60px;
     padding-bottom: 40px;
 }
-
+.unselected {
+    background-color: white;
+    color: #337AB7;
+}
 .selected {
     background-color: #337AB7;
     color: white;
 }
 
-#navbar a {
+#navbar a, #stackednavbar a {
     padding: 10px;
     font-size: large;
     border: 1px solid #337AB7;
     background-color: none;
+}
+#stackednavbar .row {
+    padding-top: 20px
 }
 
 #navbar span {
@@ -34,13 +40,17 @@ h3 {
 }
 
 .page-header {
-    padding-bottom: 30px;
+    color: rgba(0, 0, 0, 0.534);
+    font-family: Arial, Helvetica, sans-serif
+    /* padding-bottom: 30px; */
 }
 
 .monospace {
     font-family: 'Courier New', monospace;
 }
-
+.monospace p {
+    font-family: Arial, Helvetica, sans-serif
+}
 .bold {
     font-weight: bold;
 }
@@ -72,12 +82,19 @@ p {
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-
+.social-media {
+    padding-top: 50px;
+}
+.social-media a {
+    font-size: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 /* Float four columns side by side */
 
 .column {
     float: left;
-    width: 25%;
+    width: 33%;
     padding: 0 10px;
 }
 
@@ -99,13 +116,23 @@ body {
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* opacity transition */
+    /* -webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -ms-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out; */
     /* this adds the "card" effect */
     padding: 16px;
     text-align: center;
-    background-color: #f1f1f1;
-    height: 250px;
+    background-color: white;
+    height: 300px;
     background-size: contain;
 }
+.card:hover {
+    opacity: .6;
+}
+
 .name-block {
     padding-top: 40px;
 }
@@ -116,4 +143,12 @@ body {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     text-shadow: 8px 8px #337AB7, 15px 15px white;
+}
+.card {
+    display: none;
+}
+.cardrow {
+    padding-bottom: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
 }

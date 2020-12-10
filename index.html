@@ -24,16 +24,32 @@
         </div>
         <div class="row" id="navbar">
             <div class="col-md-12 text-center monospace bold">
-                <a href="/" class="selected">about me</a>
+                <a href="index.html" class="selected">about me</a>
                 <span></span>
-                <a href="portfolio.html">portfolio</a>
+                <a href="portfolio.html" class="unselected">portfolio</a>
                 <span></span>
-                <a href="contact.html">contact</a>
+                <a href="contact.html" class="unselected">contact</a>
             </div>
         </div>
-        <div class="row monospace" id='main' style='display: none;'>
+        <div id='stackednavbar' style='display: none;'>
+            <div class='row'>
+                <div class="col-md-12 text-center monospace bold">
+                    <a href="index.html" class="selected">about me</a>
+                </div>
+            </div>
+            <div class='row'>
+                <div class="col-md-12 text-center monospace bold">
+                    <a href="portfolio.html" class="unselected">portfolio</a>
+                </div>
+            </div>
+            <div class='row'>
+                <div class="col-md-12 text-center monospace bold">
+                    <a href="contact.html" class="unselected">contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="row monospace" id='main2' style='display: none;'>
             <div class="col-md-6">
-                <h2 class="bold page-header">about me</h2>
                 <h3>who am I?</h3>
                 <p>My name is Paige, and I'm a junior studying Computer Science and Slavic Languages at Harvard
                     University. My research interests lie at the intersection of language and computers, especially
@@ -81,11 +97,11 @@
                 <p class='shift-right'>scraped the Russian National Corpus and constructed machine learning models to
                     analyze verb-case constructions in Russian</p>
                 <p><span class="bold blue">research assistant</span>, Harvard Kennedy School of Government</p>
-                <p class='shift-right'>extracting data from text files using Python and SpaCy to perform social
+                <p class='shift-right'>extracted data from text files using Python and SpaCy to perform social
                     network analysis on the Cambridge Five KGB spy ring</p>
                 <p><span class="bold blue">crisis response team member</span>, Harvard College Data Analytics Group x
                     Human Rights First</p>
-                <p class="shift-right">Researched the spread of COVID-19 in ICE detention facilities and created <a
+                <p class="shift-right">researched the spread of COVID-19 in ICE detention facilities and created <a
                         href='www.detainedindanger.org'>www.detainedindanger.org</a>, a website that includes a database
                     of confirmed cases, map, visualizations, and articles</p>
             </div>
