@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap core CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet">
+    <script src='fade.js'></script>
+    <title>portfolio</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row monospace bold">
+            <div class="col-md-12 text-center name-block">
+                <span class='name'>paige lee</span>
+            </div>
+        </div>
+        <div class="row monospace" id="navbar">
+            <div class="col-md-12 text-center bold">
+                <a href="index.html" class="unselected">about me</a>
+                <span></span>
+                <a href="portfolio.html" class="selected">back to portfolio</a>
+                <span></span>
+                <a href="contact.html" class="unselected">contact</a>
+            </div>
+        </div>
+        <div class='monospace' id='stackednavbar' style='display: none;'>
+            <div class='row'>
+                <div class="col-md-12 text-center bold">
+                    <a href="index.html" class="unselected">about me</a>
+                </div>
+            </div>
+            <div class='row'>
+                <div class="col-md-12 text-center bold">
+                    <a href="portfolio.html" class="selected">back to portfolio</a>
+                </div>
+            </div>
+            <div class='row' style='padding-bottom: 20px'>
+                <div class="col-md-12 text-center bold">
+                    <a href="contact.html" class="unselected">contact</a>
+                </div>
+            </div>
+        </div>
+        <div id='stackednavbar' style='display: none;'>
+            <div class='row'>
+                <div class="col-md-12 text-center bold">
+                    <a href="index.html" class="selected">about me</a>
+                </div>
+            </div>
+            <div class='row'>
+                <div class="col-md-12 text-center bold">
+                    <a href="portfolio.html" class="unselected">back to portfolio</a>
+                </div>
+            </div>
+            <div class='row'>
+                <div class="col-md-12 text-center bold">
+                    <a href="contact.html" class="unselected">contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="row monospace" id='main2' style='display: none;'>
+            <div class="col-md-6">
+                <h3>Education Epidemic</h3>
+                <p>
+                    The Education Epidemic is an interactive website that sheds light on the barriers
+                    students face to remote learning across the United States. The data used to create
+                    the visualizations is from the Census Bureau's American Community Survey, a monthly
+                    survey that examines the living situations of families chosen at random across the US. 
+                    Inspiration for the project was drawn from personal experience and a belief that not enough
+                    attention is being paid to the challenges of remote learning underscored by structural inequalities.
+                </p>
+                <p>The challenges we explored were food insecurity, Internet access, computer access, and noise levels.</p>
+                <p>
+                    My contributions to the project mainly lie in the adaption of D3.js maps to show the percentage
+                    of students in challenging remote learning situations. The map was adapted from <a href='https://github.com/ONSvisual/Simple-charts/tree/master/all-templates/regional-map-bar'>
+                    this map of England from ONSVisual on GitHub</a> to a map showing the United States along with
+                    a corresponding bar chart. I was also heavily involved in the design and implementation of the website's front-end (HTML/CSS).
+                </p>
+                <p><a href='https://education-epidemic.github.io/home/'>
+                    The full website can be found here.
+                </a></p>
+            </div>
+            <div class="col-md-6">
+                <div style='text-align: center;'>
+                    <img src='images/eed3.png' alt='United States map' class="img-responsive" width="100%">
+                    <img src='images/eehome.png' alt='Education Epidemic home' class="img-responsive" width="100%">
+                </div>
+            </div>
+        </div>
+
+        <div class="row monospace" style="padding: 100px">
+            <div class="col-md-12">
+            </div>
+        </div>
+        <div class="row monospace">
+            <div class="col-md-12 text-center small">
+                <p id='footer'></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

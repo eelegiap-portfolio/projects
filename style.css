@@ -2,6 +2,36 @@ body {
     background-color: whitesmoke;
 }
 
+#profilepic {
+    /* transform: scale(.5); */
+    /* border-radius: 50%; */
+    box-shadow: 5px 5px 8px #888888;
+    height: 200px;
+    padding: 0;
+}
+.card-box {
+    background-color: rgba(255, 255, 255, 0.839);
+    height: 100%;
+    display: none;
+    vertical-align: middle;
+}
+
+.card-text {
+    display:inline-block;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    padding-top: 50px;
+    font-size: 24px;
+    height: 100%;
+    margin: 3px;
+    color:#337AB7;
+    opacity: 1;
+}
+
+.card-text:hover {
+    text-decoration: none;
+    color: #337AB7;
+}
+
 h3 {
     font-weight: bold;
     color: #337AB7;
@@ -13,16 +43,26 @@ h3 {
 }
 
 #navbar {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 40px;
+}
+img {
+    padding: 5px;
 }
 .unselected {
     background-color: white;
     color: #337AB7;
+    box-shadow: 5px 5px 8px #888888;
 }
+.unselected:hover, .selected:hover {
+    box-shadow: 2px 2px 4px #888888;
+}
+
 .selected {
     background-color: #337AB7;
     color: white;
+    box-shadow: 5px 5px 8px #888888;
+
 }
 
 #navbar a, #stackednavbar a {
@@ -30,7 +70,9 @@ h3 {
     font-size: large;
     border: 1px solid #337AB7;
     background-color: none;
+    border-radius: 25px;
 }
+
 #stackednavbar .row {
     padding-top: 20px
 }
@@ -41,16 +83,18 @@ h3 {
 
 .page-header {
     color: rgba(0, 0, 0, 0.534);
-    font-family: Arial, Helvetica, sans-serif
-    /* padding-bottom: 30px; */
+    /* font-family: Arial, Helvetica, sans-serif */
 }
 
 .monospace {
-    font-family: 'Courier New', monospace;
+    font-family: 'Georgia', serif;
 }
+
 .monospace p {
-    font-family: Arial, Helvetica, sans-serif
+    font-family: 'Georgia', serif;
+    /* font-family: Arial, Helvetica, sans-serif */
 }
+
 .bold {
     font-weight: bold;
 }
@@ -82,14 +126,17 @@ p {
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .social-media {
     padding-top: 50px;
 }
+
 .social-media a {
     font-size: 50px;
     padding-left: 15px;
     padding-right: 15px;
 }
+
 /* Float four columns side by side */
 
 .column {
@@ -123,32 +170,42 @@ body {
     -o-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out; */
     /* this adds the "card" effect */
-    padding: 16px;
+    margin: 16px;
     text-align: center;
     background-color: white;
-    height: 300px;
+    height: 250px;
     background-size: contain;
 }
-.card:hover {
-    opacity: .6;
+.card-bg {
+    height: 275px;
+    padding: 16px;
+    background-image: url('images/tr-radar.png');
+    background-size: contain;
+
 }
 
 .name-block {
     padding-top: 40px;
 }
+
 .name {
     font-size: 50px;
     letter-spacing: 0.1em;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    text-shadow: 8px 8px #337AB7, 15px 15px white;
+    -webkit-text-stroke-color: #337AB7;
 }
+
 .card {
     display: none;
 }
+
 .cardrow {
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-right: 50px;
     padding-left: 50px;
+}
+#footer {
+    color: #337AB7;
 }

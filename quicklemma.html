@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap core CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet">
+    <script src='fade.js'></script>
+    <title>portfolio</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row bold monospace">
+            <div class="col-md-12 text-center name-block">
+                <span class='name'>paige lee</span>
+            </div>
+        </div>
+        <div class="row monospace" id="navbar">
+            <div class="col-md-12 text-center bold">
+                <a href="index.html" class="unselected">about me</a>
+                <span></span>
+                <a href="portfolio.html" class="selected">back to portfolio</a>
+                <span></span>
+                <a href="contact.html" class="unselected">contact</a>
+            </div>
+        </div>
+        <div class='monospace' id='stackednavbar' style='display: none;'>
+            <div class='row'>
+                <div class="col-md-12 text-center bold">
+                    <a href="index.html" class="unselected">about me</a>
+                </div>
+            </div>
+            <div class='row'>
+                <div class="col-md-12 text-center bold">
+                    <a href="portfolio.html" class="selected">back to portfolio</a>
+                </div>
+            </div>
+            <div class='row' style='padding-bottom: 20px'>
+                <div class="col-md-12 text-center bold">
+                    <a href="contact.html" class="unselected">contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="row monospace" id='main2' style='display: none;'>
+            <div class="col-md-6">
+                <h3>Quick Lemma</h3>
+                <p>Quick Lemma is a tool currently in development for the <a
+                        href='https://visualizingrussian.fas.harvard.edu/'>Visualizing Russian website</a>,
+                    a suite of web-based tools for exploring the data behind the Russian language.
+                </p>
+                <p>This tool explores the different frequency with which Russian words occur, over time, and where.
+                    Data is pulled from two differnet sources: the database compiled by Professor Steven Clancy of the
+                    Harvard
+                    Slavic Department, and the full version of the Russian National Corpus.
+                </p>
+                <p>The main advantages of this tool is its functionality to compare the data of different lemmas.
+                    In the example to the right, I compare the frequencies of the words "president," "leader," and "secretary."
+                    The tool outputs the Google N-Gram viewer of the input words, showing the decline of the use of "secretary" 
+                    and the ascendancy of "president" from the late 20th to the early 21st century. 
+                </p>
+                <p>Besides a graph, there are static representations of frequency and rank for the three words, showing that 
+                    "president" has the highest frequency, and "leader" has the lowest, possibly do its status as a borrowed word
+                    in Russian.
+                </p>
+                <p>This project has been self-led. With support from the other members of the Visualizing Russian team, I am fully responsible for the design and implementation of every aspect of the tool.
+                </p>
+                <p>
+                    <a href='https://visualizingrussian-dev.fas.harvard.edu/quick-lemma'>Prototype here.</a>
+                </p>
+            </div>
+            <div class="col-md-6">
+                <div style='text-align: center;'>
+                    <img src='images/ql1.png' alt='Radar Chart' class="img-responsive" width="100%">
+                    <img src='images/ql3.png' alt='Radar Chart' class="img-responsive" width="100%">
+                    <img src="images/ql2.png" alt="Case Distribution Usage" class="img-responsive" width="100%">
+                </div>
+            </div>
+        </div>
+
+        <div class="row monospace" style="padding: 100px">
+            <div class="col-md-12">
+            </div>
+        </div>
+        <div class="row monospace">
+            <div class="col-md-12 text-center small">
+                <p id='footer'></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

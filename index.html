@@ -3,7 +3,6 @@
 <html lang="en">
 
 <head>
-
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,18 +11,18 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="style.css" rel="stylesheet">
     <script src='fade.js'></script>
-    <title>PL: home</title>
+    <title>home</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="row monospace bold">
+        <div class="row bold monospace">
             <div class="col-md-12 text-center name-block">
-                <span class='name'>Paige Lee</span>
+                <span class='name'>paige lee</span>
             </div>
         </div>
-        <div class="row" id="navbar">
-            <div class="col-md-12 text-center monospace bold">
+        <div class="row monospace" id="navbar">
+            <div class="col-md-12 text-center bold">
                 <a href="index.html" class="selected">about me</a>
                 <span></span>
                 <a href="portfolio.html" class="unselected">portfolio</a>
@@ -31,30 +30,33 @@
                 <a href="contact.html" class="unselected">contact</a>
             </div>
         </div>
-        <div id='stackednavbar' style='display: none;'>
+        <div class='monospace' id='stackednavbar' style='display: none;'>
             <div class='row'>
-                <div class="col-md-12 text-center monospace bold">
+                <div class="col-md-12 text-center bold">
                     <a href="index.html" class="selected">about me</a>
                 </div>
             </div>
             <div class='row'>
-                <div class="col-md-12 text-center monospace bold">
+                <div class="col-md-12 text-center bold">
                     <a href="portfolio.html" class="unselected">portfolio</a>
                 </div>
             </div>
-            <div class='row'>
-                <div class="col-md-12 text-center monospace bold">
+            <div class='row' style='padding-bottom: 20px'>
+                <div class="col-md-12 text-center bold">
                     <a href="contact.html" class="unselected">contact</a>
                 </div>
             </div>
         </div>
         <div class="row monospace" id='main2' style='display: none;'>
             <div class="col-md-6">
-                <h3>who am I?</h3>
-                <p>My name is Paige, and I'm a junior studying Computer Science and Slavic Languages at Harvard
-                    University. My research interests lie at the intersection of language and computers, especially
+                <h3>about me</h3>
+                <p>My name is <span class='bold'>Paige</span>, and I'm a junior studying <span class='bold'>Computer
+                        Science and Slavic Languages</span> at Harvard
+                    University. </p>
+                <p>
+                    My research interests lie at the intersection of language and computers, especially
                     regarding the real-world applications of Natural Language Processing (NLP). </p>
-
+                <p>Outside of academics, I like to read, listen to music, and hang out with my cat.</p>
                 <br><br><br>
 
                 <h3>skills</h3>
@@ -67,23 +69,27 @@
                 <br><br><br><br>
 
                 <h3>organizations & leadership</h3>
-                <p><span class='bold small-header'>current:</span></p>
+                <p><span class='bold small-header'>Current:</span></p>
                 <p><span class="bold blue">editor</span>, Harvard Technology Review</p>
-                <p class="shift-right">researching, writing, and editign articles on misinformation, tech policy, and politics.</p>
+                <p class="shift-right">researching, writing, and editign articles on misinformation, tech policy, and
+                    politics.</p>
                 <p><span class="bold blue">external relations manager</span>, Harvard Bach Society Orchestra</p>
                 <p class="shift-right">leading the orchestra's publicity, outreach, and social media functions.</p>
             </div>
 
-            <div class="col-md-6 shift-down">
-                <h3>what am I doing this year?</h3>
-                <p>I am currently on a gap year, spending my time working, learning, and creating. Click on my portfolio
-                    to explore my
-                    current and past projects. </p>
+            <div class="col-md-6">
+                <div style='text-align: center;'>
+                    <img id='profilepic' src="images/paige.jpeg" alt="Profile Picture">
+                </div>
 
-                <br><br><br>
+                <h3 style='padding-top: 30px;'>what am I doing this year?</h3>
+                <p>I am currently on a gap year, spending my time working, learning, and creating. Click on my portfolio
+                    to explore my current and past projects. </p>
+
+                <br>
 
                 <h3>roles & experience</h3>
-                <p class='bold'>current: </p>
+                <p class='bold'>Current: </p>
                 <p><span class="bold blue">full stack programmer</span>, Harvard Slavic Department</p>
                 <p class="shift-right">working on web tools to allow students, teachers, and linguists to visualize the
                     data behind the Russian language.</p>
@@ -92,7 +98,7 @@
                     food purchase data and their resulting greenhouse gas emissions; contributing to the university’s
                     greenhouse gas emissions standards</p>
                 <br>
-                <p class='bold'>past: </p>
+                <p class='bold'>Past: </p>
                 <p><span class="bold blue">computational linguistics research</span>, Harvard Slavic Department</p>
                 <p class='shift-right'>scraped the Russian National Corpus and constructed machine learning models to
                     analyze verb-case constructions in Russian</p>
@@ -111,8 +117,8 @@
             </div>
         </div>
         <div class="row monospace">
-            <div class="col-md-12 text-center small">
-                <p>designed by paige lee, 12-8-20</p>
+            <div class="col-md-12 text-center small" style='color: #337AB7'>
+                <p id='footer'></p>
             </div>
         </div>
     </div>

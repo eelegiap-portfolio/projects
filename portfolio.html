@@ -12,18 +12,18 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="style.css" rel="stylesheet">
     <script src='fade.js'></script>
-    <title>PL: portfolio</title>
+    <title>portfolio</title>
 </head>
 
 <body>
     <div class="container">
         <div class="row monospace bold">
             <div class="col-md-12 text-center name-block">
-                <span class='name'>Paige Lee</span>
+                <span class='name'>paige lee</span>
             </div>
         </div>
-        <div class="row" id="navbar">
-            <div class="col-md-12 text-center monospace bold">
+        <div class="row monospace" id="navbar">
+            <div class="col-md-12 text-center bold">
                 <a href="index.html" class="unselected">about me</a>
                 <span></span>
                 <a href="portfolio.html" class="selected">portfolio</a>
@@ -31,29 +31,70 @@
                 <a href="contact.html" class="unselected">contact</a>
             </div>
         </div>
+        <div class='monospace' id='stackednavbar' style='display: none;'>
+            <div class='row'>
+                <div class="col-md-12 text-center bold">
+                    <a href="index.html" class="unselected">about me</a>
+                </div>
+            </div>
+            <div class='row'>
+                <div class="col-md-12 text-center bold">
+                    <a href="portfolio.html" class="selected">portfolio</a>
+                </div>
+            </div>
+            <div class='row' style='padding-bottom: 20px'>
+                <div class="col-md-12 text-center bold">
+                    <a href="contact.html" class="unselected">contact</a>
+                </div>
+            </div>
+        </div>
         <div class="row monospace cardrow">
             <div class="col-md-12">
                 <div class="column">
-                    <div id='card1' class="card" style="background-image: url('images/tr-radar.png');">..</div>
+                    <div id='card1' class="card" style="background-image: url('images/tr-radar.png');">
+                        <div class='card-box'>
+                            <a href='casedistribution.html' class='card-text '><span class='bold'>case distribution:</span> grammatical spider charts</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="column">
-                    <div id='card2' class="card" style="background-image: url('images/tr-ngram.png');">..</div>
+                    <div id='card2' class="card" style="background-image: url('images/tr-ngram.png');">
+                        <div class='card-box'>
+                            <a href='quicklemma.html' class='card-text'><span class='bold'>quick lemma:</span> exploring russian word frequency</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="column">
-                    <div id='card3' class="card" style="background-image: url('images/tr-DID.png');">..</div>
+                    <div id='card3' class="card" style="background-image: url('images/tr-DID.png');">
+                        <div class='card-box'>
+                            <a href='detainedindanger.html' class='card-text '><span class='bold'>detained in danger:</span> COVID-19 & ICE</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="row monospace cardrow">
             <div class="col-md-12">
                     <div class="column">
-                        <div id='card4' class="card" style="background-image: url('images/ee.png');">..</div>
+                        <div id='card4' class="card" style="background-image: url('images/ee.png');">
+                            <div class='card-box'>
+                                <a href='educationepidemic.html' class='card-text '><span class='bold'>education epidemic:</span> COVID-19 & American schools</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="column">
-                        <div id='card5' class="card" style="background-image: url('images/tr-wf.png');">..</div>
+                        <div id='card5' class="card" style="background-image: url('images/tr-wf.png');">
+                            <div class='card-box'>
+                                <a href='wordformation.html' class='card-text '><span class='bold'>word formation:</span> visualizing the dictionary</a>
+                            </div> 
+                        </div>
                     </div>
                     <div class="column">
-                        <div id='card6' class="card" style="background-image: url('images/tr-c5.png');">..</div>
+                        <div id='card6' class="card" style="background-image: url('images/tr-c5.png');">
+                            <div class='card-box'>
+                                <a href='cambridge5.html' class='card-text '><span class='bold'>cambridge 5 spy ring:</span> NLP & espionage</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -63,7 +104,7 @@
             </div>
             <div class="row monospace">
                 <div class="col-md-12 text-center small">
-                    <p>designed by paige lee, 12-8-20</p>
+                    <p id='footer'></p>
                 </div>
             </div>
         </div>

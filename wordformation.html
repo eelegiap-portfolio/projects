@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap core CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet">
+    <script src='fade.js'></script>
+    <title>portfolio</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row monospace bold">
+            <div class="col-md-12 text-center name-block">
+                <span class='name'>paige lee</span>
+            </div>
+        </div>
+        <div class="row monospace" id="navbar">
+            <div class="col-md-12 text-center bold">
+                <a href="index.html" class="unselected">about me</a>
+                <span></span>
+                <a href="portfolio.html" class="selected">back to portfolio</a>
+                <span></span>
+                <a href="contact.html" class="unselected">contact</a>
+            </div>
+        </div>
+        <div class='monospace' id='stackednavbar' style='display: none;'>
+            <div class='row'>
+                <div class="col-md-12 text-center bold">
+                    <a href="index.html" class="unselected">about me</a>
+                </div>
+            </div>
+            <div class='row'>
+                <div class="col-md-12 text-center bold">
+                    <a href="portfolio.html" class="selected">back to portfolio</a>
+                </div>
+            </div>
+            <div class='row' style='padding-bottom: 20px'>
+                <div class="col-md-12 text-center bold">
+                    <a href="contact.html" class="unselected">contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="row monospace" id='main2' style='display: none;'>
+            <div class="col-md-6">
+                <h3>Word Formation</h3>
+                <p>Word Formation is a tool currently in development for the <a
+                        href='https://visualizingrussian.fas.harvard.edu/'>Visualizing Russian website</a>,
+                    a suite of web-based tools for exploring the data behind the Russian language.
+                </p>
+                <p>This tool explores Словообразование, word formation, which in this case refers
+                    to the prefix-root-suffix make-up of different words. The breakdown of words in 
+                    this way is a common pedagogical tool in Russian language classes, as the word
+                    parts carry semantic meaning and aid in word recognition.
+                </p>
+                <p>
+                    Word Formation prominently features a novel D3.js visualization (designed by me) which visualizes
+                    words as nodes suspended at a specified distance from the center (the word root). The length of the link
+                    is inversely correlated to how frequent or common a word is. Thus, one can find common words (often 
+                    easier or more familiar to beginners) closer to the center and less common words farther away.
+                </p>
+                <p>Hovering over nodes gives additional grammatical or semantic information on the word.
+                    There are several ways to customize your view, by node coloring or node limiting functions.
+                </p>
+                <p>This project has been self-led. With support from the other members of the Visualizing Russian team, I am fully responsible for the design and implementation of every aspect of the tool.
+                </p>
+                <p>
+                    <a href='https://visualizingrussian-dev.fas.harvard.edu/word-formation'>Prototype here.</a>
+                </p>
+            </div>
+            <div class="col-md-6">
+                <div style='text-align: center;'>
+                    <img src='images/cloud.png' alt='Word Cloud' class="img-responsive" width="100%">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <img src='images/wfhome.png' alt='Word Formation home' class="img-responsive" width="100%">
+            </div>
+            <div class="col-md-4">
+                <img src="images/hover.png" alt="Word hover" class="img-responsive" width="100%">
+            </div>
+        </div>
+        <div class="row monospace" style="padding: 100px">
+            <div class="col-md-12">
+            </div>
+        </div>
+        <div class="row monospace">
+            <div class="col-md-12 text-center small">
+                <p id='footer'></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

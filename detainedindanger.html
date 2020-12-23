@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap core CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet">
+    <script src='fade.js'></script>
+    <title>portfolio</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row monospace bold">
+            <div class="col-md-12 text-center name-block">
+                <span class='name'>paige lee</span>
+            </div>
+        </div>
+        <div class="row monospace" id="navbar">
+            <div class="col-md-12 text-center bold">
+                <a href="index.html" class="unselected">about me</a>
+                <span></span>
+                <a href="portfolio.html" class="selected">back to portfolio</a>
+                <span></span>
+                <a href="contact.html" class="unselected">contact</a>
+            </div>
+        </div>
+        <div class='monospace' id='stackednavbar' style='display: none;'>
+            <div class='row'>
+                <div class="col-md-12 text-center bold">
+                    <a href="index.html" class="unselected">about me</a>
+                </div>
+            </div>
+            <div class='row'>
+                <div class="col-md-12 text-center bold">
+                    <a href="portfolio.html" class="selected">back to portfolio</a>
+                </div>
+            </div>
+            <div class='row' style='padding-bottom: 20px'>
+                <div class="col-md-12 text-center bold">
+                    <a href="contact.html" class="unselected">contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="row monospace" id='main2' style='display: none;'>
+            <div class="col-md-6">
+                <h3>Detained in Danger</h3>
+                <p>Detained in Danger is a collaborative project between the Harvard Data Analytics
+                    Group and Human Rights First to create a data-based journalism effort to expose the
+                    severity of the COVID-19 epidemic within ICE detention facilities.
+                </p>
+                <p>The self-updating website tracks the number of COVID-19 infections within specific ICE 
+                    facilities by scraping the official data from the ICE website on a weekly basis. The data 
+                    takes form of a map of the United States, individual data info-cards for
+                    each facility, and a list of detention centers ranked from most to least cases. The interactive data visualizations
+                    are supplemented by four investigative articles on the conditions and reality of
+                    life inside the facilities.
+                </p>
+                <p>My work on the project ranged from data collection, the set-up of the JavaScript backend, implementation of the D3.js 
+                    map, integration of the info-cards, to design aspects of the front page (HTML/CSS). The project was entirely
+                    student-created, and I worked with two others to set up the webpage.
+                </p>
+                <p>
+                    Website at <a href='https://detainedindanger.org/'>https://detainedindanger.org/</a>.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <div style='text-align: center;'>
+                    <img src='images/texasmap.png' alt='Cases in Texas facilities' class="img-responsive" width="100%">
+                    <row>
+                        <div class="col-md-6" style='padding: 0px'>
+                            <img src='images/infocard.png' alt='Info card for Houston facility' class="img-responsive" width="100%">
+                        </div>
+                        <div class='col-md-6' style='padding: 0px'>
+                            <img src="images/rankedlist.png" alt="Ranked list of facilities" class="img-responsive" width="100%">
+                        </div>
+                    </row>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class='col-md-12'>
+                <img src="images/didwebsite.png" alt="Website" class="img-responsive" width="100%">
+            </div>
+        </div>
+        <div class="row monospace" style="padding: 100px">
+            <div class="col-md-12">
+            </div>
+        </div>
+        <div class="row monospace">
+            <div class="col-md-12 text-center small">
+                <p id='footer'></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
