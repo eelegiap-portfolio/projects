@@ -74,7 +74,8 @@ img {
 }
 
 #stackednavbar .row {
-    padding-top: 20px
+    padding-top: 50px;
+    padding: 15px;
 }
 
 #navbar span {
